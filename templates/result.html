@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Your Survey Result</title>
-        <link rel="stylesheet" href="{{url_for('static','css/resultStyle.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/resultStyle.css')}}">
         <script type="text/javascript">
             function goBack() {
                 window.history.back()
@@ -13,10 +13,10 @@
     <body>
         <div id="resultBox">
             <h2>Your Submitted Info</h2>
-            <p>Name: {{name}}</p>
-            <p>Dojo Location: {{location}}</p>
-            <p>Favorite Language: {{language}}</p>
-            <p>Comments: {{comment}}</p>
+            <p>Name: {{ name }}</p>
+            <p>Dojo Location: {{ location }}</p>
+            <p>Favorite Language: {{ language }}</p>
+            <p>Comments: {{ comment }}</p>
 
             <button type="button" name="button" onclick="goBack()"></button>
         </div>
