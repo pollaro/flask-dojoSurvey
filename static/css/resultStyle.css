@@ -1,0 +1,12 @@
+#resultBox{
+    display: inline-block;
+    width: 20em;
+    border: solid thin black;
+    padding: 2%;
+    margin: 2%;
+}
+
+button{
+    width:35%;
+    display: inline-block;
+}
