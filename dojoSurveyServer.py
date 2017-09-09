@@ -22,6 +22,9 @@ def postResult():
     elif len(comment) < 1:
         flash("Comment cannot be empty")
         return redirect('/')
+    elif len(comment) > 120:
+        flash("Comment cannot be longer than 120 characters")
+        return redirect('/')
     else:
         return render_template('result.html',name=name,location=location,language=language,comment=comment)
 app.run(debug=True)
