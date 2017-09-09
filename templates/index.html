@@ -7,6 +7,13 @@
     </head>
     <body>
         <div class="surveyBox">
+            {% with msgs = get_flashed_messages() %}
+                {% if msgs %}
+                    {% for msg in msgs %}
+                        <span>{{ msg }}<br></span>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
             <form id="dojoSurvey" action="/result" method="post">
                 <div id="inputs">
                     Your Name: <input type="text" name="name">

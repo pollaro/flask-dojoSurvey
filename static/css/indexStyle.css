@@ -7,6 +7,10 @@
     width: 20em;
 }
 
+.surveyBox span{
+    color: red;
+}
+
 #inputs{
     display: inline-block;
 }
